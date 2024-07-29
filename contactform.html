@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="Contactform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    .profile {
+        background-color:black;
+        padding: 40px;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        border-top: 50px;
+        max-width: 500px;
+    }
+    .profile h2 {
+        font-size: 24px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .profile h1 {
+        font-size: 36px;
+        margin: 0;
+        color: white;
+    }
+    .profile h3 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile i {
+        margin-right: 10px;
+        color: #e8ebee;
+    }
+    .profile h2, .profile h3 {
+        animation: fadeIn 1s ease-in-out;
+    }
+    .profile h1 {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">
+            <h2>Photography</h2>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="mainpage.html">
+                    <h3>Home</h3>
+                </a></li>
+            <li><a href="contactform.html">
+                    <h3>Contact Me</h3>
+                </a></li>
+            <li><a href="gallery.html">
+                    <h3>Gallery</h3>
+                </a></li>
+            <li><a href="mybio.html">
+                    <h3>My Bio</h3>
+                </a></li>
+        </ul>
+    </nav>
+    <div class="cont">
+        <div class="profile">
+            <h2 id="myText">Hello! I'm Teja passionate photographer <br>with a love for capturing the beauty of the
+                world through my lens.</h2><br>
+            <h3><i class="fa-solid fa-phone"></i>Phone: +91 7013223569</h3><br>
+            <h3><i class="fa-regular fa-envelope"></i>Email: dharmatejamurala@gmail.com</h3><br>
+            <h3><i class="fa-brands fa-instagram"></i>Instagram: mr__teja09</h3><br>
+        </div>
+        <div class="contact-form">
+            <form class="contact-form__form" action="https://formspree.io/f/xblrjvnd" method="post">
+                <div class="contact-form__head">
+                    <h1 class="contact-form__title"><u>Contact Form</u></h1><br>
+                    <p class="contact-form__description">Please fill all the texts in the fields</p>
+                </div>
+                <label for="fullName" class="contact-form__label">Your Name:</label>
+                <input type="text" placeholder="Full Name" name="fullName" id="fullName" class="contact-form__input">
+
+                <label for="email" class="contact-form__label">Your Email:</label>
+                <input type="email" placeholder="abcd@xyz.com" name="email" id="email" class="contact-form__input"
+                    required>
+
+                <label for="subject" class="contact-form__label">Subject:</label>
+                <input type="text" placeholder="Job Enquiry" name="subject" id="subject" class="contact-form__input"
+                    required>
+
+                <label for="message" class="contact-form__label">Message:</label>
+                <textarea placeholder="Your Message Here" name="message" id="message" class="contact-form__textarea"
+                    required></textarea>
+                <button type="submit" class="contact-form__button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

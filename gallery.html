@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-item {
+            position: relative;
+            width: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .download-link {
+            display: block;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+
+        .navbar {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+        .navbar-title h2 {
+            margin: 0;
+        }
+
+        .navbar-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-links li {
+            margin-left: 20px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: #007BFF;
+        }
+
+        .navbar-links h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">
+            <h2>Photography</h2>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="mainpage.html">
+                    <h3>Home</h3>
+                </a></li>
+            <li><a href="contactform.html">
+                    <h3>Contact Me</h3>
+                </a></li>
+            <li><a href="gallery.html">
+                    <h3>Gallery</h3>
+                </a></li>
+            <li><a href="mybio.html">
+                    <h3>My Bio</h3>
+                </a></li>
+        </ul>
+    </nav>
+
+    <div class="outer-container">
+        <div class="image-item">
+            <img src="img1.jpg" alt="Image 1">
+            <a href="img1.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img2.png" alt="Image 2">
+            <a href="img2.png" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img3.jpg" alt="Image 3">
+            <a href="img3.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img4.jpg" alt="Image 4">
+            <a href="img4.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img5.jpg" alt="Image 5">
+            <a href="img5.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img6.jpg" alt="Image 6">
+            <a href="img6.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img7.png" alt="Image 7">
+            <a href="img7.png" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img8.jpg" alt="Image 8">
+            <a href="img8.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img9.jpg" alt="Image 9">
+            <a href="img9.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img10.png" alt="Image 10">
+            <a href="img10.png" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+        <div class="image-item">
+            <img src="img12.jpg" alt="Image 12">
+            <a href="img12.jpg" download="Image @Teja photos" class="download-link">Download</a>
+        </div>
+    </div>
+</body>
+
+</html>

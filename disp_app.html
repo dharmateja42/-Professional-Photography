@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+</head>
+<body>
+    <h1>Photography/Videography Booking System</h1>
+    <button id="displayAppointments">Display Appointments</button>
+    <div id="appointmentsContainer"></div>
+
+    <script>
+        document.getElementById('displayAppointments').addEventListener('click', function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'fetch_appointments.php', true);
+            xhr.onload = function() {
+                if (this.status === 200) {
+                    document.getElementById('appointmentsContainer').innerHTML = this.responseText;
+                } else {
+                    document.getElementById('appointmentsContainer').innerHTML = '<p>Error loading appointments.</p>';
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.navbar-title h2 {
+    margin: 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #007BFF;
+}
+
+.navbar-links h3 {
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+.content {
+    flex: 1;
+    color: white;
+    align-items: center;
+    padding-right: 1em;
+    margin-top: 13%;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 600px;
+    height: 600px;
+    padding: 5px;
+}
+
+.contact-button {
+    font-size: large;
+    background-color: #418ced;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+.contact-button a{
+    text-decoration: none;
+    color: white;
+   
+}
+
+.contact-button:hover {
+    background-color: #376ce6;
+    color: aliceblue;
+}
+
+.explore-button {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+.explore-button a{
+  text-decoration: none;
+  color: white;
+}
+
+.explore-button:hover {
+    background-color: rgb(36, 34, 34);
+    text-decoration: none;
+    color: white;
+}
+
+.buy-plans {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.buy-plans h2 {
+    align-items: baseline;
+    justify-content: center;
+    font-size: 2em;
+    color: #111110;
+    margin-bottom: 10px;
+}
+
+.buy-plans p {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.subscription-options {
+    display: flex;
+    color: black;
+    ;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.subscription-option {
+    flex: 0 1 calc(48% - 10px);
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.subscription-option h3 {
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
+    background-color: #111110;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Add space between images */
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    /* Light grey border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+    position: relative;
+}
+
+.image-container img:hover {
+    border-color:grey;
+    /* Highlight border color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}
+
+.image-container .img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container .img-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.image-container .img-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.download-link {
+    display: block;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #0056b3;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .social-media {
+    display: flex;
+    color: #000;
+    gap: 20px;
+  }
+  
+  .social-media a {
+    color: #727c80;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #9dd3ed;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .bottom {
+    text-shadow: #070707;
+    color: rgb(126, 117, 117);
+    size: 6cqmax;
+  }
+  /* Apply basic styling to the body */
+
+
+/* Style the header */
+header {
+    background-color:black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Style the section containing the map */
+section#map {
+    padding: 20px;
+    text-align: center;
+}
+
+section#map h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Style the iframe for the map */
+section#map iframe {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-h2 {
+    text-align: center;
+    margin-bottom: 22px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.image-gallery img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+.image-gallery img:nth-child(1) {
+    width: 300px;
+    height: 300px;
+}
+.image-gallery img:nth-child(2) {
+    width: 250px;
+    height: 350px;
+}
+.image-gallery img:nth-child(3) {
+    width: 300px;
+    height: 300px;
+}
+.image-gallery img:nth-child(4) {
+    width: 400px;
+    height: 300px;
+}
+.image-gallery img:nth-child(5) {
+    width: 600px;
+    height: 300px;
+}
+.image-gallery img:nth-child(6) {
+    width: 400px;
+    height: 450px;
+}
+
+  

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography/Videography Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .appointment-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        .appointment-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .appointment-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .appointment-form input, 
+        .appointment-form select, 
+        .appointment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .appointment-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .appointment-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="appointment-form">
+        <h2>Book an Appointment</h2>
+        <form action="appointment.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="service">Service Type</label>
+            <select id="service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="photography">Photography</option>
+                <option value="videography">Videography</option>
+                <option value="drone shoot">Drone Shoots</option>
+                <option value="both">Both Photography & Videography</option>
+            </select>
+            
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

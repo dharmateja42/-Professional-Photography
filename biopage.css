@@ -1,0 +1,50 @@
+.biopage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #050505;
+    padding: 20px;
+}
+
+.biopage img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.biopage h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.biopage h3 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.biopage p {
+    font-size: 1.2em;
+    max-width: 900px;
+    color: white;
+}
+
+.cont-bio {
+    background-color: #4feaea;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.cont-bio a{
+    text-decoration: none;
+    color: white;
+}

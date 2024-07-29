@@ -1,0 +1,137 @@
+/* Center the form on the page */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+  background-color: black;
+  /* Optional: background color */
+  margin-right: 40px;
+}
+
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1em;
+  color: white;
+}
+
+.cont__h2 {
+  font-family: 'Times New Roman', serif;
+
+}
+
+#myText {
+  margin-left: 80px;
+  font-family: 'Times New Roman', serif;
+}
+
+.contact-form__head {
+  margin-bottom: 20px;
+}
+
+.contact-form__title {
+  margin: 0;
+  color: #060807;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-form__description {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+
+.contact-form__label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form__textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form__button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333330;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form__button:hover {
+  background-color: #060807;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.navbar-title h2 {
+  margin: 0;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #007BFF;
+}
+
+.navbar-links h3 {
+  margin: 0;
+}
