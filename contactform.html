@@ -10,7 +10,7 @@
 </head>
 <style>
     .profile {
-        background-color:black;
+        background-color: black;
         padding: 40px;
         color: white;
         border-radius: 10px;
@@ -20,16 +20,19 @@
         border-top: 50px;
         max-width: 500px;
     }
+
     .profile h2 {
         font-size: 24px;
         color: white;
         margin-bottom: 10px;
     }
+
     .profile h1 {
         font-size: 36px;
         margin: 0;
         color: white;
     }
+
     .profile h3 {
         font-size: 18px;
         margin: 10px 0;
@@ -38,21 +41,34 @@
         align-items: center;
         justify-content: center;
     }
+
     .profile i {
         margin-right: 10px;
         color: #e8ebee;
     }
-    .profile h2, .profile h3 {
+
+    .profile h2,
+    .profile h3 {
         animation: fadeIn 1s ease-in-out;
     }
+
     .profile h1 {
         animation: fadeIn 1.5s ease-in-out;
     }
+
     @keyframes fadeIn {
-        0% { opacity: 0; transform: translateY(20px); }
-        100% { opacity: 1; transform: translateY(0); }
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 </style>
+
 <body>
     <nav class="navbar">
         <div class="navbar-title">
@@ -70,6 +86,9 @@
                 </a></li>
             <li><a href="mybio.html">
                     <h3>My Bio</h3>
+                </a></li>
+            <li><a href="display_appointments.php">
+                    <h3>Appointments</h3>
                 </a></li>
         </ul>
     </nav>
